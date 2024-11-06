@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="todolist.css">
+</head>
+<body>
+    <div class="todo-app">
+        <h1 class="todo-app-title" style="text-align: center;">To do list</h1>
+        <!-- Nhập dữ liệu -->
+        <form action ="" class="todo-form" style="text-align: center;">
+            <input type="text" class="todo-input"
+            placeholder="What's you want to do?">
+            <button type="submit" class="todo-create-button">Create</button>
+        </form>
+        <!-- Sắp xếp theo điều kiện -->
+        <form action="" class="todo-filter-form" style="text-align: center;">
+            <input type="radio" name="filter" id="all" value="all" checked>
+            <label for="all">All</label>
+            <input type="radio" name="filter" id="active" value="active">
+            <label for="active">Active</label>
+            <input type="radio" name="filter" id="completed" value="completed">
+            <label for="completed">Completed</label>
+        </form>
+        <!-- Hiển thị danh sách công việc -->
+        <ul class="todo-list"></ul>
+        <div class="todo-footer">
+            <span class="todo-count">0</span>
+            <button class="todo-clear-button">Clear Completed</button>
+        </div>
+    </div>
+    <script src="todolist.js"></script>
+</body>
+</html>

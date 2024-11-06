@@ -1,0 +1,92 @@
+document.addEventListener("DOMContentLoaded", () => {
+  function randomDice() {
+    return Math.floor(Math.random() * 6) + 1;
+  }
+
+  const dices = [
+    { values: randomDice(), isFrozen: false },
+    { values: randomDice(), isFrozen: false },
+    { values: randomDice(), isFrozen: false },
+    { values: randomDice(), isFrozen: false },
+    { values: randomDice(), isFrozen: false },
+    { values: randomDice(), isFrozen: false },
+    { values: randomDice(), isFrozen: false },
+    { values: randomDice(), isFrozen: false },
+    { values: randomDice(), isFrozen: false },
+    { values: randomDice(), isFrozen: false },
+  ];
+
+  // Query các phần tử cần thiết
+  const container = document.querySelector(".dice-container");
+  const btnStart = document.querySelector("#btnNewGame");
+  const btnRoll = document.querySelector("#btnRoll"); // Sửa lại dấu #
+  const currentRoll = document.querySelector(".dice-score");
+  const bestRoll = document.querySelector(".best-score");
+  // Biến kiểm tra trạng thái thắng
+  let isWin = false;
+
+  // Hàm cập nhật hiển thị dữ liệu lên DOM
+  function renderDices() {
+    container.innerHTML = "";
+    dices.forEach((dice) => {
+      const div = document.createElement("div");
+      div.classList.add("dice");
+      div.textContent = dice.values;
+      if (dice.isFrozen) {
+        div.classList.add("frozen");
+      }
+      div.addEventListener("click", () => {
+        dice.isFrozen = !dice.isFrozen;
+        div.classList.toggle("frozen");
+      });
+      container.appendChild(div);
+    });
+
+    // Kiểm tra trạng thái thắng
+    if (checkWin()) {
+      btnStart.style.display = "block";
+      btnRoll.style.display = "none";
+    }
+  }
+
+  renderDices();
+
+  // Xử lý sự kiện
+  btnStart.addEventListener("click", () => {
+    isWin = false;
+    btnStart.style.display = "none";
+    btnRoll.style.display = "block";
+    dices.forEach((dice) => {
+        dice.values = randomDice();
+        dice.isFrozen = false;
+    });
+    renderDices();
+  });
+
+  btnRoll.addEventListener("click", () => {
+    dices.forEach((dice) => {
+      if (!dice.isFrozen) {
+        dice.values = randomDice();
+      }
+    });
+    renderDices();
+  });
+
+  // Hàm xử lý
+  
+
+  // Hàm kiểm tra thắng
+  function checkWin() {
+    return dices.every(
+      (dice) => dice.isFrozen && dice.values === dices[0].values
+    );
+  }
+});
+
+//Đếm số lần roll(reset khi start gaeme)
+//Âm thanh khi win (hiệu ứng)
+//Thời gian chơi (setInterval)
+//lịch sử (giữ lại kể cả khi reload trang- local storage)
+localStoreage.setItem: lưu dữ liệu vào
+localStoreage.getItem: lấy dữ liệu ra
+localStoreage.removeItem: xóa dữ liệu

@@ -1,0 +1,10 @@
+Dom => mô hình dối tượng tài liệu truy cập và thao tác với các nội dung trên web
+Để truy cập DOM => document
+document.querySelector():phần tử đầu tiên tìm thấy |document.querySelectorAll()
+thay đổi nội dung: node.textContent\node.innerText
+thay đổi html: node.innerHTML
+node.style| node.style.cssText
+class: node.classList(contains,add,remove,toggle)
+cloneNode() chỉ clone div, ko thêm các p bên trong
+cloneNode(true): clode toàn bộ div
+nên taọ div, container trong function

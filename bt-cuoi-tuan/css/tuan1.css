@@ -1,0 +1,410 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: Roboto, Arial, "sans-serif";
+}
+.trangthai {
+  text-decoration: none;
+}
+.page-preview {
+  height: 100%;
+  display: block;
+  width: 100%;
+}
+.page-preview-header {
+  display: flex;
+  background: #f2f2f2;
+  height: 70px;
+  width: 100%;
+  position: fixed;
+  justify-content: flex-end;
+  gap: 642px;
+  z-index: 1000;
+}
+.chuyentrangthai {
+  display: flex;
+  gap: 4px;
+}
+.trangthai {
+  width: 40px;
+  height: 40px;
+  padding: 8px;
+  margin-top: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.trangthai:hover {
+  background-color: #e2f0fc;
+  cursor: pointer;
+}
+.trangthai img {
+  width: 32px;
+  height: 32px;
+}
+.close {
+  width: 26px;
+  height: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 15px;
+  padding: 4px;
+  margin-right: 10px;
+}
+.close img {
+  width: 18px;
+  height: 18px;
+}
+.close:hover {
+  cursor: pointer;
+}
+.icon:hover {
+  cursor: pointer;
+}
+.icon img {
+  width: 120px;
+  height: 40px;
+  position: absolute;
+  left: 10px;
+  top: 17px;
+}
+.page-content {
+}
+.khung1 {
+  background-image: url("https://images03.nicepage.com/c461c07a441a5d220e8feb1a/bf48ed0748c75a00aaa512bb/PA7BIF1x.jpg");
+  min-height: 607px;
+  padding-top: 70px;
+}
+.frame1 {
+  position: relative;
+}
+.icon-frame1 {
+  position: absolute;
+  left: 190px;
+  top: 20px;
+}
+.content-frame1 {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  left: 215px;
+  top: 210px;
+}
+.frame1-h3 {
+  line-height: 36px;
+  font-size: 1.5rem;
+  font-weight: 400;
+  letter-spacing: 2px;
+}
+.frame1-h1 {
+  font-weight: 700;
+  font-size: 3rem;
+}
+.phargrahp1 {
+  margin: 24px auto 0 0;
+  color: #111111;
+}
+u {
+  text-underline-offset: 5px;
+  color: #391440;
+}
+.frame2 {
+  max-width: 50%;
+  max-height: 100%;
+  position: absolute;
+  right: 0;
+  margin-left: 70px;
+}
+.frame2 img {
+  max-width: 80.3%;
+  position: relative;
+}
+.icon-frame2 {
+  position: absolute;
+  right: 200px;
+}
+.why-choose-us {
+  text-align: center;
+  padding: 50px;
+}
+
+.why-choose-us h2 {
+  font-size: 3rem;
+  color: #111111;
+  display: inline-block;
+  padding: 0 20px;
+}
+
+.why-choose-us p {
+  font-size: 17px;
+  color: #111111;
+  margin: 17px 0 40px;
+  margin-top: 10px;
+}
+.cankhung {
+  margin-left: 50px;
+  margin-right: 50px;
+}
+.features {
+  display: grid;
+  grid-template-columns: repeat(3, 33.3333%);
+  grid-gap: 5px;
+  grid-template-rows: repeat(2, auto);
+  margin-left: 120px;
+}
+
+.feature-item {
+  text-align: center;
+  max-width: 300px;
+  position: relative;
+  margin: 20px auto 30px 0;
+}
+
+.number {
+  font-size: 15.625rem;
+  font-weight: 900;
+  color: rgba(240, 210, 100, 0.7);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+}
+
+.feature-item h4 {
+  font-size: 1.5rem;
+  margin: 20px 0;
+  color: #333333;
+  position: relative;
+  z-index: 1;
+  font-weight: 400;
+}
+
+.feature-item p {
+  font-size: 1rem;
+  color: #000000;
+  z-index: 1;
+  position: relative;
+  margin: 40px auto 70px 0;
+}
+.khung3 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 50px;
+  height: 580px;
+  background-color: #efeeee;
+}
+.khung3-content {
+  max-width: 600px;
+  margin-left: 150px;
+}
+.khung3-content h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #f0d200;
+}
+.khung3-content h5 {
+  font-size: 1.5rem;
+  line-height: 1;
+  color: #333;
+  margin-bottom: 20px;
+  font-weight: 400;
+}
+.khung3-content p {
+  color: #111111;
+  line-height: 1.6;
+  font-size: 20px;
+  margin-top: 36px;
+  font-weight: 300;
+  text-align: left;
+  margin: 20px 0 0;
+}
+.khung3-content button {
+  background-color: #f1c50e;
+  color: #111111;
+  border: none;
+  padding: 10px 52px 10px 51px;
+  font-size: 1rem;
+  font-weight: 700;
+  margin-top: 30px;
+}
+button:hover {
+  background-color: #ffffff;
+  cursor: pointer;
+}
+.khung3-image {
+  margin-left: 50px;
+}
+.khung3-image img {
+  max-width: 100%;
+  max-height: 100%;
+}
+.khung4 {
+  background-image: url("https://images02.nicepage.com/a1389d7bc73adea1e1c1fb7e/633c94b317fb5366b354d730/pexels-photo-3906049.jpeg");
+  background-position: 0% 50.8%;
+  background-size: 115%;
+}
+.khung4-setting {
+  display: flex;
+  flex-direction: column;
+  min-height: 564px;
+  justify-content: center;
+  align-items: center;
+  width: 1140px;
+  margin-left: 180px;
+  color: #ffffff;
+}
+.khung4-setting h6 {
+  font-size: 1.5rem;
+  letter-spacing: 0;
+  font-weight: 400;
+  margin: 40px auto 0 0;
+}
+.khung4-setting p {
+  font-size: 1rem;
+  letter-spacing: 0;
+  font-weight: 400;
+  margin: 20px auto 0 0;
+}
+.khung4-setting h2 {
+  font-weight: 700;
+  letter-spacing: 2px;
+  font-size: 3rem;
+  margin: 20px auto 0 0;
+}
+.text4 {
+  display: inline-block;
+  line-height: 2;
+  margin: 20px 656px 60px 0;
+  width: 500px;
+}
+.khung5 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 50px;
+  height: 551px;
+  background-color: #ffffff;
+}
+.chinhkhung5 {
+  display: flex;
+  width: 1140px;
+  height: 431px;
+}
+.khung5-content {
+  padding: 30px;
+}
+.canh5 {
+  font-size: 3rem;
+  font-weight: 700;
+  margin: 30px 0 0;
+}
+.khung5-img {
+  margin-left: 50px;
+}
+.canp5 {
+  margin: 20px 0 0;
+  line-height: 1.8;
+  font-size: 1rem;
+  font-family: "Open Sans", sans-serif;
+}
+.canp {
+  letter-spacing: 1px;
+  margin: 22px auto 0 0;
+}
+.khung5-content button {
+  background-color: #f1c50e;
+  color: #111111;
+  border: none;
+  padding: 10px 52px 10px 51px;
+  font-size: 1rem;
+  font-weight: 700;
+  margin-top: 30px;
+}
+button:hover {
+  background-color: #ffffff;
+  cursor: pointer;
+}
+.khung5-img {
+  min-height: 390px;
+  background-position: 50% 50%;
+  padding: 30px 31px 30px 30px;
+}
+.khung5-img img {
+  max-width: 120%;
+  margin-right: 50px;
+}
+.chinhkhung6 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.chinhkhung6 h2 {
+  font-size: 3rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin: 55px auto 0;
+}
+.chinhkhung6 p {
+  width: 460px;
+  margin: 20px auto 0;
+  text-align: center;
+}
+.sponsor {
+  margin-top: 26px;
+}
+.u-layout-row {
+  display: flex;
+}
+.layout-row-check {
+  width: 228px;
+  height: 153px;
+}
+.middle-icon {
+  display: flex;
+  justify-content: center;
+  padding: 30px;
+}
+.footer {
+  background-color: #333333;
+  color: #ffffff;
+  text-align: center;
+}
+.canfooter {
+  min-height: 120px;
+  display: flex;
+  align-items: center;
+}
+.canfooter p {
+  width: 417px;
+  margin: 49px auto;
+  font-size: 0.875rem;
+}
+.secFooter {
+  gap: 5px;
+  font-size: 14px;
+  line-height: 1.6;
+  font-family: "Open Sans", sans-serif;
+  background-color: #333333;
+  color: #ffffff;
+  height: 97.6px;
+  text-align: center;
+}
+.u-layout {
+  display: inline;
+}
+.u-link {
+  color: #e5bfed;
+  display: inline;
+}
+.cangiua{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

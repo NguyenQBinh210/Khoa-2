@@ -1,0 +1,10 @@
+Event: là hành động, tín hiệu xảy ra khi người dùng tương tác với web
+onClick ='class()' : khi người dùng ấn vào nút
+Xử lý: dùng html attribute hoặc DOM property (chỉ có 1 listener)
+addEventListener: Trình lắng nghe sự kiện vào 1 phần tử cụ thể
+Ưu điêm: có thể thêm nhiều phần tử trong cùng 1 trình đk
+//Sửa lỗi
+//1. Kiểm tra console
+//2. Kiểm tra event
+//3. Thêm log để kiểm tra => hàm xử lý sự kiện có thực sự chạy ko
+//4. Debug: gỡ lỗi
