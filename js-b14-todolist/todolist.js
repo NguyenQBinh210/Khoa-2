@@ -13,7 +13,7 @@ const todoCount = document.querySelector(".todo-count");
 //Hàm update
 
 //Hàm render
-function renderTodos(todos) {
+function renderTodos() {
   //chuyển dữ liệu trong mảng thành giao diện
   todoList.innerHTML = todos
     .map((todo) => {
