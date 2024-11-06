@@ -22,16 +22,32 @@ function renderTodos() {
                   todo.completed ? "checked" : ""
                 }>
                 <span class="todo-text">${todo.text}</span>
-                <button class="todo-edit-button">Edit</button>
-                <button class="todo-delete-button">Delete</button>
-            </li>
-            `;
+                <button class="todo-edit-button" data-id="${
+                  todo.id
+                }">Edit</button>
+                <button class="todo-delete-button" data-id="${
+                  todo.id
+                }">Delete</button> 
+                </li>
+                `;
+      //Gán dữ liệu vào 1 thẻ html để thao tác thông qua js
     })
     .join("");
+  todoList.querySelectorAll(".todo-delete-button").forEach((button) => {
+    button.addEventListener("click", (e) => {
+      const id = button.getAttribute("data-id");
+      todos = todos.filter((todo) => todo.id != id);
+      renderTodos();
+    });
+  });
+  const count = todos.filter((todo) => !todo.completed).length;
+  if(count == 0){
+    todoCount.innerHTML = "No task left";
+  }else{
+    todoCount.innerHTML =  `${count} task left`
+  }
 }
-renderTodos(todos);
-const todoDelete = document.querySelector(".todo-delete-button");
-const todoUpdate = document.querySelector(".todo-edit-button");
+renderTodos();
 //Xử lý sự kiện
 // todoInput.addEventListener('input', (e)=>{ lấy dữ liệu
 //     input = todoInput.value;
@@ -43,16 +59,17 @@ todoCreateFrom.addEventListener("submit", (e) => {
     return;
   } else {
     const newTodo = {
-      id: Date.now(), 
-      text, 
+      id: Date.now(),
+      text,
       completed: false,
     };
     todos.unshift(newTodo); //thêm vào đầu danh sách
     todoInput.value = ""; //clear nội dung ô input
-    renderTodos(todos);
-    countTodos(todos);
+    renderTodos();
+    // countTodos(todos);
   }
 });
-function countTodos(todo) {
-  todoCount.innerHTML = `Có ${todo.length} sự kiện`;
-}countTodos(todos);
+// function countTodos(todo) {ds  
+//   todoCount.innerHTML = `Có ${todo.length} sự kiện`;
+// }
+// countTodos(todos);
