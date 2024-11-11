@@ -10,6 +10,10 @@ const todoInput = document.querySelector(".todo-input");
 const todoCreateFrom = document.querySelector(".todo-form");
 const todoList = document.querySelector(".todo-list");
 const todoCount = document.querySelector(".todo-count");
+const active = document.querySelector("#active");
+let idUpdate = "";
+let isUpdate = false;
+
 //Hàm update
 
 //Hàm render
