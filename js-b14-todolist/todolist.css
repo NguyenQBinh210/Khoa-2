@@ -149,3 +149,40 @@ label {
   gap: 10px;
   margin: 5px 0;
 }
+.todo-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 10px;
+}
+
+.todo-text {
+  flex-grow: 1;
+  margin-right: 10px;
+}
+
+.todo-checkbox {
+  margin-right: 10px;
+}
+
+button.todo-edit-button,
+button.todo-delete-button {
+  margin-left: 5px; /* Khoảng cách giữa các nút */
+}
+.todo-footer {
+  text-align: center;
+}
+.todo-list {
+  padding: 10px 20px;
+  max-height: 150px;
+  overflow-y: auto;
+  padding: 5px;
+  border: 1px solid #302b8b;
+  border-radius: 5px;
+}
+
+.todo-delete-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
