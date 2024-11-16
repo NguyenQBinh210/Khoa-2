@@ -41,21 +41,19 @@ function renderTodos() {
                 <span class="todo-text">${todo.text}</span>
                 <button class="todo-edit-button" data-id="${
                   todo.id
-                }">Edit</button>
+                }"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-pencil"><path d="M21.174 6.812a1 1 0 0 0-3.986-3.987L3.842 16.174a2 2 0 0 0-.5.83l-1.321 4.352a.5.5 0 0 0 .623.622l4.353-1.32a2 2 0 0 0 .83-.497z"/><path d="m15 5 4 4"/></svg></button>
                 <button class="todo-delete-button" data-id="${
                   todo.id
-                }">Delete</button> 
+                }"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-trash-2"><path d="M3 6h18"/><path d="M19 6v14c0 1-1 2-2 2H7c-1 0-2-1-2-2V6"/><path d="M8 6V4c0-1 1-2 2-2h4c1 0 2 1 2 2v2"/><line x1="10" x2="10" y1="11" y2="17"/><line x1="14" x2="14" y1="11" y2="17"/></svg></button> 
               </li>`;
     })
     .join("");
 
-  // Cập nhật số lượng công việc chưa hoàn thành
   const count = todos.filter((todo) => !todo.completed).length;
   todoCount.innerHTML = count === 0 ? "No task left" : `${count} task left`;
 }
 renderTodos();
 
-// Xử lý sự kiện thêm công việc mới
 todoCreateForm.addEventListener("submit", (e) => {
   e.preventDefault();
   const text = todoInput.value.trim();
@@ -109,8 +107,6 @@ todoList.addEventListener("click", (e) => {
     renderTodos();
   }
 });
-
-// Xử lý sự kiện nút "Clear Completed"
 todoClear.addEventListener("click", () => {
   todos = todos.filter((todo) => !todo.completed);
   renderTodos();
