@@ -93,11 +93,12 @@ todoList.addEventListener("click", (e) => {
     }
   }
 
-  if (e.target.classList.contains("todo-delete-button")) {
-    const id = e.target.getAttribute("data-id");
+  if (e.target.closest(".todo-delete-button")) {
+    const id = e.target.closest(".todo-delete-button").getAttribute("data-id");
     todos = todos.filter((todo) => todo.id != id);
     renderTodos();
   }
+
 
   if (e.target.classList.contains("todo-checkbox")) {
     const id = e.target.getAttribute("data-id");
