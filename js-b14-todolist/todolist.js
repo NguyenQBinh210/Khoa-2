@@ -82,8 +82,8 @@ todoCreateForm.addEventListener("submit", (e) => {
 
 // Xử lý sự kiện click vào danh sách
 todoList.addEventListener("click", (e) => {
-  if (e.target.classList.contains("todo-edit-button")) {
-    const id = e.target.getAttribute("data-id");
+  if (e.target.closest(".todo-edit-button")) {
+    const id = e.target.closest(".todo-edit-button").getAttribute("data-id");
     const todoToEdit = todos.find((todo) => todo.id == id);
     if (todoToEdit) {
       isUpdate = true;
@@ -98,7 +98,6 @@ todoList.addEventListener("click", (e) => {
     todos = todos.filter((todo) => todo.id != id);
     renderTodos();
   }
-
 
   if (e.target.classList.contains("todo-checkbox")) {
     const id = e.target.getAttribute("data-id");
