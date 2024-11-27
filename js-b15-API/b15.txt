@@ -1,1 +1,13 @@
-Bất đồng bộ là 
+Luồng API chỉ có gửi và nhận dữ liệu
+Còn hiển thị là việc của render(js)
+Có 3 trạng thái
+1. loading
+2. Success
+3. Error
+
+Cách bước
+1.check console(nếu có lỗi sẽ hiển thị thông báo với số dòng cụ thể)
+2.Nếu ko thấy console ko chạy, thêm console.log vào các hàm xử lý 
+sự kiện xem nó có chạy vào hàm đấy ko(nếu nó ko chạy thì có thể là chưa gọi hàm, chưa gắn sự kiện
+ xong, hoặc chưa gắn link js )
+3.Lỗi logic: thêm debuger để kiểm tra

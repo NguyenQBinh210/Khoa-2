@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/product.css" />
+    <link rel="stylesheet" href="css/header.css">
+  </head>
+  <body>
+    <button class="button-34"><a href="b15.html">Return</a></button>
+    <header class="heading">
+      <div class="heading-icon">
+        <img
+          src="https://th.bing.com/th/id/OIP.Uqq2J01zFaRMrqfWZcUJWwHaHa?w=164&h=180&c=7&r=0&o=5&dpr=1.4&pid=1.7"
+          alt=""
+        />
+      </div>
+      <div class="heading-container">
+        <div class="trangchu"><a href="b15.html">Trang chủ</a></div>
+        <div class="menu"><a href="#">Menu</a></div>
+        <div class="tieudiem"><a href="#">Tiêu điểm</a></div>
+      </div>
+      <div class="heading-cart">
+        <a href="cart.html" 
+          ><svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="lucide lucide-shopping-cart"
+          >
+            <circle cx="8" cy="21" r="1" />
+            <circle cx="19" cy="21" r="1" />
+            <path
+              d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12"
+            /></svg>
+          <span class="quantity">0</span>
+          </a>
+      </div>
+    </header>
+    <div class="container">
+      <div class="loading">Đang tải sản phẩm</div>
+      <div class="error" style="display: none">Ko tìm thấy sản phẩm</div>
+      <div class="product-wrapper" style="display: none">
+        <div class="khung">
+          <h1 class="product-title"></h1>
+          <div class="product-rating"></div>
+          <div class="product-infor-wrapper">
+            <div class="product-image"></div>
+            <div class="product-infor">
+              <div class="price">
+                <div class="product-discount-price"></div>
+                <div class="product-price"></div>
+              </div>
+              <div class="product-description"></div>
+              <div class="product-number-item">
+                <h5>Quantity</h5>
+                <button class="product-decrease">-</button>
+                <input
+                  class="input-qty"
+                  name=""
+                  type="number"
+                  value="1"
+                  readonly
+                />
+                <button class="product-increase">+</button>
+              </div>
+              <button class="button-73">Add to cart</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="js/type.js"></script>
+    <script src="js/cart.js"></script>
+    <script src="js/product.js"></script>
+  </body>
+</html>

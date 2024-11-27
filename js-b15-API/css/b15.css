@@ -1,0 +1,128 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+body {
+  background-size: cover; /* Đảm bảo hình ảnh bao phủ toàn bộ màn hình */
+  background-position: center; /* Đặt hình ảnh ở giữa */
+  background-repeat: no-repeat; /* Không lặp lại hình ảnh */
+  height: 100vh; /* Đặt chiều cao của body bằng chiều cao của màn hình */
+  margin: 0; /* Loại bỏ khoảng cách mặc định */
+  background-attachment: fixed;
+  z-index: 10000;
+}
+.product-list {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  padding: 15px 15px;
+
+}
+.product {
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  padding: 16px;
+  margin: 8px;
+  border-radius: 8px;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.product-title {
+  color: rebeccapurple;
+  text-align: center;
+  font-size: 20px;
+}
+.product-description {
+  color: red;
+  text-align: center;
+  font-size: 15px;
+}
+h1 {
+  font-size: 40px;
+  color: red;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 20px 20px;
+}
+.container {
+  background-color: blanchedalmond;
+}
+.product-img img {
+  width: 250px;
+  height: 230px;
+}
+.star {
+  color: gold;
+  font-size: 20px;
+  margin-right: 2px;
+}
+.product-rating {
+  display: flex;
+  align-items: center;
+  margin-top: 8px;
+}
+.product-price {
+  font-size: 18px;
+  color: #e74c3c;
+  margin: 8px 0;
+}
+
+/* CSS */
+button {
+  appearance: none;
+  background-color: #ffffff;
+  border-radius: 40em;
+  border-style: none;
+  box-shadow: #adcfff 0 -12px 6px inset;
+  box-sizing: border-box;
+  color: #000000;
+  cursor: pointer;
+  display: inline-block;
+  font-family: -apple-system, sans-serif;
+  font-size: 20rem;
+  font-weight: 700;
+  letter-spacing: -0.24px;
+  margin: 0;
+  outline: none;
+  padding: 1rem 1.3rem;
+  quotes: auto;
+  text-align: center;
+  text-decoration: none;
+  transition: all 0.15s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+button:hover {
+  background-color: #ffc229;
+  box-shadow: #ff6314 0 -6px 8px inset;
+  transform: scale(1.125);
+}
+
+button:active {
+  transform: scale(1.025);
+}
+
+@media (min-width: 768px) {
+  button {
+    font-size: 20px;
+    padding: 0.75rem 2rem;
+  }
+}
+.price {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 50px;
+}
+.set-button {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+a {
+  text-decoration: none;
+}

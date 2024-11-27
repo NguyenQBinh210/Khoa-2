@@ -3,12 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>B15</title>
+    <title>Document</title>
     <link rel="stylesheet" href="css/header.css" />
     <link rel="stylesheet" href="css/b15.css" />
   </head>
-  <body style="background-image: url('OIP.jpeg')">
-    <header class="heading">
+  <body>
+    <header class="heading" style="position: fixed; top: 0">
       <div class="heading-icon">
         <img
           src="https://th.bing.com/th/id/OIP.Uqq2J01zFaRMrqfWZcUJWwHaHa?w=164&h=180&c=7&r=0&o=5&dpr=1.4&pid=1.7"
@@ -21,7 +21,7 @@
         <div class="tieudiem"><a href="#">Tiêu điểm</a></div>
       </div>
       <div class="heading-cart">
-        <a href="cart.html" 
+        <a href="cart.html"
           ><svg
             xmlns="http://www.w3.org/2000/svg"
             width="24"
@@ -38,26 +38,27 @@
             <circle cx="19" cy="21" r="1" />
             <path
               d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12"
-            /></svg>
-          <span class="quantity">0</span>
-          </a>
+            />
+        </svg><span class="quantity">0</span>
+        </a>
       </div>
     </header>
-    <div
-      class="product-list-wrapper"
-      style="background-image: url(OIP.jpeg); position: relative"
-    >
-      <!-- Nên có 3 đoạn dữ liệu cần có trong 3 trạng thái -->
-      <!-- Ban đầu hiển thị load -->
-      <div class="loading">Loading...</div>
-      <div class="error" style="display: none">Có lỗi xảy ra</div>
-      <div class="product-list" style="position: absolute"></div>
+    <div class="cart-container">
+      <div class="cart-container-header">
+        <div class="cart-header">
+          <h1>Your cart</h1>
+        </div>
+      </div>
+      <div class="cart-body">
+        <div class="cart-list">
+          <div class="cart-item-title">Tiêu đề sản phẩm</div>
+
+        </div>
+      </div>
     </div>
-    <footer class="footer"></footer>
-    <script src="js/header.js"></script>
+
     <script src="js/type.js"></script>
     <script src="js/cart.js"></script>
-    <script src="js\b15.js"></script>
-    <a href=""></a>
+    <script src=""></script>
   </body>
 </html>
